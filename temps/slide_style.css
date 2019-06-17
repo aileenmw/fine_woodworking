@@ -1,0 +1,24 @@
+/*/////Image slider //////////////*/
+.slider{
+    height: 400px;
+}
+
+.slideshow {
+    margin: auto;
+    width: 100%;
+}
+.slideshow > div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.slideshow img{
+    height: 400px;
+}

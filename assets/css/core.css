@@ -1,0 +1,371 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Coda', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Amaranth', sans-serif;
+*/
+body{
+    margin: 0;
+    background-color: wheat; 
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+}
+a{
+    text-decoration: none!important;
+}
+#bg_img{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    z-index: -2;
+}
+#intro_wrapper{  
+    width: 100%;
+}
+/*/////////TOP NAV //////////*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Kalam', cursive;
+    color: #fffaed;
+}
+.topnav a:hover {
+    color: #e8c774;
+}
+.active {
+    background-color: #555;
+}
+.topnav .icon {
+    display: none;
+}
+.fa-bars{
+    top: 17px!important;
+}
+nav{
+    width: 210px;
+}
+nav ul{
+    width: 230px;
+    display: block;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-family: 'Amaranth';
+    font-size: 2em;
+    font-weight: 900;
+    padding: 20px 20px 0 0;
+}
+nav ul li{
+    text-align: right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    color: rgba(102, 104, 150, 1);
+    color: #555;
+}
+#top{
+    height: 30vh;
+    background-color: rgba(0,0,0,.7);
+}
+#top h1{
+    color: rgba(79, 81, 132, 1);
+    color: #fff;
+    font-family: 'Coda', cursive;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin: 0;
+    padding: 80px 0 0 30px;
+}
+#top h2, #bottom h2{
+    color: rgba(79, 81, 132, 1);
+    color: #fff;
+    margin: 0;
+    padding: 0 0 0 30px;  
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+}
+#bottom h2{
+    color: #000;
+    font-weight: 900;
+    text-align: right;
+    padding:  60px 30px  0 0; 
+}
+#middle{
+    height: 40vh;
+    width: 100%;
+    background-color: rgba(255, 201, 56, .6);
+}
+#bottom{
+    height: 45vh;
+    background-color: rgba(0,0,0,.1);
+    background-color: rgba(169, 176, 198,.8);
+}
+main{
+    min-height: 50vh;
+    width: 100%;
+    background-color: rgba(79, 81, 132, 1);
+    background-color: rgba(5,5,5,1);
+    color: #f2f2f2;
+    padding-bottom: 100px;
+}
+main h2, main h3{
+    text-align: center;
+    padding: 5%;
+    font-family: 'Amaranth', sans-serif;
+}
+main h3{
+    height: 80px;
+}
+
+/*/////////// PHILOSOPHY ///////////*/
+.phil_wrapper{
+    height: 100vh;
+    padding-bottom: 150px;
+}
+.phil_wrapper article{
+    background-color: rgba(255, 250, 237, 1);
+    border-radius: 5px;
+    width: 70%;
+    font-family: 'Amaranth';
+    padding: 20px 35px 70px 35px;
+    margin: 5% auto;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px
+}
+.phil_wrapper h1{
+    font-family: 'Amaranth';
+}
+
+.phil_wrapper span{
+    font-size: 32px;
+    font-family: 'Amaranth';
+}
+
+/*///////////GALLERY//////////////*/
+#gallery_wrapper{
+    width: 100%;
+    padding: 0 5%;
+    padding-bottom: 100px;
+    background-color: wheat;
+    margin: auto;
+}
+#gallery_wrapper h1, #gallery_wrapper h2{
+    text-align: center;
+    font-family: 'Amaranth';
+}
+#gallery_wrapper h1{
+    margin-bottom: 1em;
+}
+#gallery_wrapper h2{
+    margin:0 0 1em 0;
+}
+#gallery_wrapper aside{
+    width: 30%;
+    margin: 0 2em;
+    position: relative;
+    font-size: 15px;
+}
+#gallery_wrapper #title{
+    text-transform:capitalize;
+}
+#gallery_wrapper aside span{
+    font-family: 'Amaranth'; 
+    font-size: 22px;
+}
+#gallery_wrapper .flex{
+    display: flex;
+    margin-bottom: 5em;
+}
+#gallery_wrapper article{
+    width: 70%;
+    margin: auto;
+}
+/*/////Image slider //////////////*/
+#slide_container{
+    width: 70%;
+    position: relative;
+}
+.slider{
+    height: 400px; 
+}
+
+.slideshow {
+    margin: auto;
+    width: 70%;
+}
+.slideshow > div {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.slideshow img{
+    height: 400px;
+}
+#btn{
+    display: none;
+    width: 70%;
+    margin: 10px auto;
+}
+footer{
+    background-color: rgba(3,3,3,1);
+    color: #f2f2f2;
+    width: 100%;
+    padding: .5em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+#footer_content{
+    border-top:1px solid gray;
+    padding: 1% 5%;
+}
+#text{
+    text-align: center;
+    width: 80%;
+}
+footer .icon_container a{
+    position: absolute;
+}
+footer .icon_container a:first-child{
+    right: 0;
+    bottom :-10px;
+}
+footer .icon_container a:nth-child(2){
+    right: 50px;
+    bottom: -11px;
+}
+footer .icon_container{
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    #top h1, #top h2{
+        text-align:center;
+    }
+    #middle{
+        height: 30vh;
+    }
+    #middle nav, #nav_ul{
+        width: 100%;   
+        background-color: rgba(255, 201, 56, .6);
+         height: 30vh;
+    }
+    #nav_ul li{
+        text-align: center;
+        font-size: 24px;
+    }
+
+main h3{
+    padding-top: 0;
+    height: auto;
+}
+    #gallery_wrapper h2{
+        font-size: 20px;
+    }
+
+    #gallery_wrapper .flex{
+        display: block;
+    }
+    .slider, .slideshow{
+        width: 100%;
+    }
+
+    .slideshow > div {
+        width: 145%;
+    }
+
+    #gallery_wrapper aside{
+        width: 100%;
+        padding: 2em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+        }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    
+    #top h1{
+        font-size: 30px;
+        padding: 15% 0 0  0;
+        text-align:center;
+    }
+
+    .phil_wrapper article{
+        width: 90%;
+    }
+    #middle nav, #nav_ul{
+        width: 100%
+    }
+    #nav_ul li{
+        text-align: center;
+    }
+}
+@media only screen and (max-width : 481px) {
+    #top h1{
+        font-size: 28px;
+        padding: 7% 0 0  0;
+        text-align:center;
+
+    }
+    #top h2{
+        font-size: 25px;
+        padding: 5% 0;
+        text-align:center;
+    }
+    #bottom h2{
+        padding-top: 1em;;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+ #footer_content{
+     padding: 2%;
+ }
+}
